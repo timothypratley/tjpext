@@ -1,0 +1,17 @@
+# tjpext
+
+Clojure extensions by Timothy Pratley
+
+## Usage
+
+(use 'tjpext.swingdoctor)
+
+## Installation
+
+Include the jar in your project
+
+
+## License
+
+EPL - see epl-v10.html
+
