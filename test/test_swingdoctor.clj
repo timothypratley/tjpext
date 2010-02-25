@@ -1,6 +1,5 @@
-(ns timothypratley.test-swingdoctor
-  (:use clojure.test
-     timothypratley.swingdoctor))
+(ns test-swingdoctor
+  (:use clojure.test tjpext.swingdoctor))
 
-(play-clip "drum_roll.wav")
+#_(play-clip "drum_roll.wav")
 

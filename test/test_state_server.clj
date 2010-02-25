@@ -1,11 +1,7 @@
-(ns timothypratley.test-state-server
-  (:use clojure.test
-     timothypratley.robots.server
-     timothypratley.robots.client
-     timothypratley.messenger
-     timothypratley.logging))
+(ns test-state-server
+  (:use clojure.test tjpext.state-server))
 
-(deftest can-send-status
+#_(deftest can-send-status
          (let [host "localhost"
                port 8888
                server (run-state-server port)
@@ -41,7 +37,4 @@
   (send-message "S04" {:x 3900.0, :y 3800.0, :v 1.3, :i -0.3})
   (send-message "PT1" {:lt 4200.0, :ct 12.0, :h 5.0})
   (send-message "PT2" {:lt 4000.0, :ct 10.0, :h 15.0}))
-
-(run-tests)
-(shutdown-agents)
 
